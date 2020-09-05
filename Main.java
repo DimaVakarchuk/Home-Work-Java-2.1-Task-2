@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        boolean positiveBalance = true;
         int openingBalance = 500;
-        int newBalance = 2500;
-        int bonus = 2500 / 100;
+        int newBalance = 1001;
+        int finalBonus = 0;
         if (newBalance > 1000) {
-            bonus = newBalance / 100;
+            finalBonus = newBalance / 100;
         }
-
-        System.out.println("Общий балланс с учетом бонусов: " + (openingBalance + newBalance + bonus));
-        System.out.println("Начисленный бонус: " + bonus);
+        System.out.println("Общий балланс с учетом бонусов: " + (openingBalance + newBalance + finalBonus));
+        System.out.println("Начисленный бонус: " + finalBonus);
     }
+
 }
